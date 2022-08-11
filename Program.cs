@@ -23,8 +23,8 @@ void intersectionPoint()
     if (k1 == k2) Console.WriteLine("Lines are parallel");
     else
     {
-        double y = (b2 - b1) / (k1 - k2);
-        double x = (y - b2) / k2;
+        double x = (b2 - b1) / (k1 - k2);
+        double y = (x - b2) / k2;
         if (k1 * x + b1 == k2 * x + b2) 
         {
             Console.WriteLine($"Intersection points x: {Math.Round(x, 2)} ; y: {Math.Round(y, 2)}");
